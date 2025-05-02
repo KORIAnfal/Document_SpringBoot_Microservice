@@ -3,7 +3,7 @@ package com.example.document.model;
 import jakarta.persistence.*;
 
 @Entity
-public class DocumentCategory {
+public class Department {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -11,9 +11,13 @@ public class DocumentCategory {
 
     private String name;
 
-    // Getters and setters
+    // Getters and Setters
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
